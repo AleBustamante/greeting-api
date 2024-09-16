@@ -2,4 +2,6 @@ spring:
   application:
     name: greeting
 
-message: "Preguntante si lo que estas haciendo hoy te acerca al lugar en el que quieres estar manana\n"
+message:
+  spa: "%s, preguntante si lo que estas haciendo hoy te acerca al lugar en el que quieres estar manana\n"
+  eng: "%s, ask yourself if what you're doing today gets you closer to the place you want to be tomorrow\n"
