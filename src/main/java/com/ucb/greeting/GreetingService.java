@@ -1,11 +1,15 @@
 package com.ucb.greeting;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
 public class GreetingService {
-    String greet = "Pregúntante si lo que estás haciendo hoy te acerca al lugar en el que quieres estar mañana\n";
+    private final String greet;
 
+    public GreetingService(@Value("${message}") String greet) {
+        this.greet = greet;
+    }
     public String getGreeting() {
         return greet;
     }
